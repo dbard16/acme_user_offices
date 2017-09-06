@@ -1,9 +1,13 @@
 function UsersList(config){
   var container = $(config.id);
-
+  var lis = config.users.map(function(user){
+    return `
+    <li class ="list-group-item">
+      ${user.name}
+    </li>`;
+  })
   var template = `
-    <li class="list-group-item"> Apple </li>
-    <li class="list-group-item"> Potato </li>
+    ${lis.join('')}
     `;
 
   var html = $(template)

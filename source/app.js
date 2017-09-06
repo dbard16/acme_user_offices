@@ -12,7 +12,7 @@ $(function(){
 
         UsersList({
           id: '#usersList',
-          selectUser
+          users
         });
 
 
